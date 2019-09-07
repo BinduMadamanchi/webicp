@@ -2,7 +2,6 @@
 <html lang="en-us">
 <head>
     <title>Rock, Paper, or Scissors</title>
-
 </head>
 <body bgcolor="#808080">
 <center>Enter Your Input Below!!  </br></br>
@@ -10,7 +9,6 @@
     <input type="button" value="Start Game" onclick="playGame()">
 </center>
 <script>
-
     function getComputerChoice() {
         switch(Math.floor(Math.random()*3)) {
             case 0:
@@ -24,7 +22,6 @@
                 break;
         };
     }
-
     function determineWinner(userChoice,computerChoice) {
         if (userChoice === computerChoice) {
             return 'It\'s a tie!';
@@ -34,6 +31,7 @@
             } else {
                 return 'You win!';
             }
+
         } else if (userChoice === 'paper'){
             if (compterChoice === 'scissors') {
                 return 'Computer wins!';
@@ -51,15 +49,10 @@
         }
     }
 
+
     function playGame() {
         let userInput1=document.getElementById("userinput").value;
         console.log(userInput1);
-        // let userInput = userInput1.toLowerCase();
-        // if (userInput1 == 'rock' || userInput1 == 'paper' || userInput1 == 'scissors') {
-        //     return userInput1;
-        // } else {
-        //     console.log('not a valid choice');
-        // }
         let userChoice = userInput1;
         let computerChoice = getComputerChoice();
         console.log("You Threw "+" " + userChoice);
@@ -70,4 +63,29 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+df
 
